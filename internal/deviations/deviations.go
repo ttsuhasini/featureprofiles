@@ -1482,3 +1482,8 @@ func FrBreakoutFix(dut *ondatra.DUTDevice) bool {
 func SkipInterfaceNameCheck(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetSkipInterfaceNameCheck()
 }
+
+// LinkLocalInsteadOfNH returns if device requires link-local instead of NH.
+func LinkLocalInsteadOfNh(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetLinkLocalInsteadOfNh()
+}
